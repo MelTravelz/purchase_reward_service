@@ -10,10 +10,11 @@ describe PurchaseEventQueue do
 
       let(:purchase_event) do
           {
-            'purchase_event_id' => 6066107,
-            'product_code_id' => 6535813,
-            'quantity' => 3,
-            'saver_id' => 6784182
+            # since I symbolized the keys, this part of the test had to change to symbols too:
+            purchase_event_id: 6066107,
+            product_code_id: 6535813,
+            quantity: 3,
+            saver_id: 6784182
           }
       end
 
